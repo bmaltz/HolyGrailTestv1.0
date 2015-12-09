@@ -69,6 +69,18 @@
                 "selectAddedContent": false
             }
         },
+        "task1": {
+            "prototype": "ui/task.reel",
+            "properties": {
+                "element": {"#": "task1"},
+                "contenteditable": "true",
+                "dir": "ltr",
+                "draggable": "true"
+            },
+            "bindings": {
+                "task": {"<-": "@list:iteration.object"}
+            }
+        },
         "title": {
             "prototype": "digit/ui/title.reel",
             "properties": {
@@ -86,7 +98,7 @@
         </h1>
         <button data-montage-id="button"></button>
         <ul data-montage-id="list">
-            <li></li>
+            <li data-montage-id="task1"></li>
         </ul>
     </div>
 </body>
